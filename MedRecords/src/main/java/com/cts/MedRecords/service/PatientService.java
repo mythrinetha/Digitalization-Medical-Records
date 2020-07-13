@@ -28,5 +28,13 @@ public class PatientService implements IntfPatientService{
 		public Optional<Patient> getPatientById(long id) {
 			return patientRepository.findById(id);
 		}
+		
+		public void savePatient(Patient patient) {
+			patientRepository.save(patient);
+		}
+		
+		public void addPatient(String firstname, String lastname, String gender,String profession) {
+			patientRepository.save(new Patient(firstname, lastname, gender,profession));
+		}
 	
 }
