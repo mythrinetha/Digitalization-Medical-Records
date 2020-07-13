@@ -63,7 +63,13 @@ public class Patient {
 		this.profession = profession;
 	}
 	
-	
+	public Patient( ) {}
+	public Patient(String firstname,String lastname,String gender,String profession) {
+		this.firstname=firstname;
+		this.lastname=lastname;
+		this.gender=gender;
+		this.profession=profession;
+	}
 
 
 
