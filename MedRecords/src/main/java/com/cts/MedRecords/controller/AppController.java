@@ -99,5 +99,20 @@ public class AppController {
 		patientService.updatePatient(patient);
 		return "redirect:/patientDetails";
 	}
+	
+	
+	@RequestMapping(value = "/addPatient", method = RequestMethod.GET)
+	public String showAddPatientPage(ModelMap model) {
+		model.addAttribute("patient", new Patient());
+		return "updatePatient";
+	}
+
+	@RequestMapping(value = "/addPatient", method = RequestMethod.POST)
+	public String addPatient(ModelMap model, Patient patient) {
+
+		patientService.savePatient(patient);
+		return "redirect:/patientDetails";
+	}
+	
 
 }
