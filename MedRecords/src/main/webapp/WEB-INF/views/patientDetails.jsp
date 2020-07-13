@@ -71,6 +71,9 @@ table.a {
 			<div class="p-3 mb-2 bg-dark text-light">
 				<h2>Personal Information</h2>
 			</div>
+			
+			<a type="button" href="/addPatient" class="block">Add Patient</a>
+			<br>
 			<table  style="width: 500px;" class="table table-striped">
 
 				<tbody>
